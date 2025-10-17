@@ -9,11 +9,151 @@
     <link href="https://fonts.googleapis.com/css2?family=Disket+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="main.css" rel="stylesheet">
+    <style>
+        .ds-skills-section {
+            padding: 7.5rem 0;
+            background-color: #252525;
+        }
+        
+        .ds-skills-section h2 {
+            font-size: 2.5rem; 
+            line-height: 3.375rem; 
+            width: 100%;
+            margin: 0 0 3rem 0;
+        }
+        
+        .ds-skills-section h2 span {
+            display: block; 
+            font-family: 'Poppins', sans-serif; 
+            text-transform: uppercase; 
+            color: #CBFE00; 
+            font-weight: 600; 
+            letter-spacing: 3px; 
+            font-size: 0.75rem; 
+            margin-bottom: 0.625rem;
+        }
+        
+        .ds-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 25px;
+        }
+        
+        .ds-skill-item {
+            background-color: #2A2A2A;
+            padding: 25px 20px;
+            text-align: center;
+            transition: all 0.4s ease;
+            border: 1px solid #575757;
+        }
+        
+        .ds-skill-item:hover {
+            border-color: #CBFE00;
+        }
+        
+        .ds-skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #CBFE00;
+        }
+        
+        .ds-skill-name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .ds-projects-section {
+            padding: 7.5rem 0;
+            background-color: #000;
+        }
+        
+        .ds-projects-section h2 {
+            font-size: 2.5rem; 
+            line-height: 3.375rem; 
+            width: 100%;
+            max-width:40%;
+            margin: 0;
+        }
+        .ds-projects-section h3 {
+            color: #C7F900;
+        }
+        
+        .ds-projects-section h2 span {
+            display: block; 
+            font-family: 'Poppins', sans-serif; 
+            text-transform: uppercase; 
+            color: #CBFE00; 
+            font-weight: 600; 
+            letter-spacing: 3px; 
+            font-size: 0.75rem; 
+            margin-bottom: 0.625rem;
+        }
+
+        .ds-projects-listing-section {
+            margin-top:5rem;
+        }
+        
+        .ds-projects-loop figure {
+            margin-right: 60px; 
+            position: relative;
+        }
+        
+        .ds-projects-loop:hover figure img.ds-image-shadow {
+            box-shadow:20px 20px #C7F900;
+        }
+        
+        .ds-link-button {
+            position: absolute; 
+            right:0.4375rem; 
+            top:0.4375rem; 
+            width: 2rem; 
+            height: 2rem; 
+            border-radius: 3px; 
+            background-color: #000; 
+            display: block; 
+            justify-content: center; 
+            align-items: center; 
+            color: #CBFE00; 
+            font-size: 1.125rem; 
+            text-align: center; 
+            opacity: 0;
+        }
+        
+        .ds-projects-loop:hover .ds-link-button {
+            opacity: 1;
+        }
+        
+        .ds-projects-loop section {
+            margin-top: 5.875rem;
+        }
+        
+        .ds-projects-loop section h3 {
+            font-family: 'Poppins', sans-serif; 
+            font-weight: 700; 
+            font-size: 1.25rem;
+        }
+        
+        .ds-projects-loop section span {
+            font-size: 1rem; 
+            font-weight: 400;
+        }
+        .ds-footer div span{
+            color: #C7F900;
+        }
+        .ds-resume-section div span{
+            color: #C7F900;
+            font-weight: 200;
+        }
+        .ds-banner div p{
+            color: #C7F900;
+            font-weight: 500;
+        }
+    </style>
     <title>Brian Sokhela - Software Engineer Aspirant</title>
   </head>
   <body>
@@ -31,10 +171,12 @@
               <h1 class="ds-banner-hed">
                 Software Engineer based in Johannesburg, South Africa
               </h1>
+              <p>BSc in IT(Computer Science & Informatics)</p>
               <ul class="ds-social">
                 <li><a href="https://github.com/briansokhela" target="_blank"><i class="ri-github-fill"></i></a></li>
                 <li><a href="https://stackoverflow.com/users/25434155/brian-sokhela" target="_blank"><i class="ri-stack-overflow-line"></i></a></li>
                 <li><a href="https://linkedin.com/in/briansokhela/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                <li><a href="mailto:briankwazikwenkosi@gmail.com"><i class="fas fa-envelope"></i></a></li>
               </ul>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5">
@@ -53,59 +195,225 @@
       <div class="container">
           <div class="row">
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <h2>Driven by Passion, Committed to Excellence: A Journey in Software Engineering and Community Impact</h2>
+                <h2>Building the Future, One Line of Code at a Time</h2>
+                <p>I'm a final-year Software Engineering student at the <span>University of Johannesburg</span>, passionate about creating innovative solutions to complex problems. My journey in technology began with a curiosity about how things work, which has evolved into a drive to build systems that make a positive impact.
+
+                </p><p>I'm passionate about problem-solving, automation, and architecture, whether it's crafting backend APIs, developing dashboards, or optimizing systems for performance. Every project I touch has one standard: <span>excellence</span>.
+
+                </p>
               </div>
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <p>I am a dedicated and passionate Software Engineering student at the University of Johannesburg, committed to excellence in both academics and community service. With a strong focus on software development, data management, and process automation, I have consistently applied my skills to create innovative solutions, such as an automated volunteer management system for UJ’s Community Engagement unit. My roles as a Community Engagement Intern, Student Volunteer Leader, and Head Tutor for Physics have honed my leadership, communication, and problem-solving abilities. Driven by a desire to make a meaningful impact, I am eager to contribute to the tech industry and continue growing as a professional.</p>
-                  <a href="https://briansokhela.github.io/mysite/resume.pdf" class="ds-download-button" download>Download Resume <i class="ri-download-line"></i></a>
+                
+                  <p>My approach to software development is rooted in problem-solving, attention to detail, and continuous learning. I believe that great code is not just about functionality, but also about maintainability, security, and user experience.</p>
+                  <p>When I'm not immersed in code, you can find me on the football field, listening to music, or helping out with small tech projects in my community. Combining my passions for learning, teaching, and building, I aim to create solutions that make a real impact both online and offline.</p>
+                  <p>I'm particularly interested in how we can leverage technology to address real-world challenges while maintaining ethical standards.</p>
+
+                  <a href="https://briansokhela.github.io/mysite/Brian-Sokhela.pdf" class="ds-download-button" download>Download Resume <i class="ri-download-line"></i></a>
               </div>
           </div>
       </div>
     </section>
     <!-- resume --> 
     
+    <!-- Skills -->
+    <section class="ds-skills-section">
+    <div class="container">
+        <h2><span>Technical Skills</span> My Expertise</h2>
+        <div class="ds-skills-grid">
+
+            <!-- Python -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="ds-skill-name">Python</div>
+            </div>
+
+            <!-- Django -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fab fa-python"></i> <!-- Django uses Python icon -->
+                </div>
+                <div class="ds-skill-name">Django</div>
+            </div>
+
+            <!-- Django REST Framework -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="ds-skill-name">DRF</div>
+            </div>
+
+            <!-- Java -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="ds-skill-name">Java</div>
+            </div>
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fas fa-code"></i> 
+                </div>
+                <div class="ds-skill-name">C#</div>
+            </div>
+
+            <!-- .NET -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="ds-skill-name">.NET</div>
+            </div>
+
+            <!-- React -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="ds-skill-name">React</div>
+            </div>
+
+            <!-- SQL -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="ds-skill-name">SQL</div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="ds-skill-name">JavaScript</div>
+            </div>
+
+            <!-- Git -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fab fa-git-alt"></i>
+                </div>
+                <div class="ds-skill-name">Git</div>
+            </div>
+
+            <!-- Microsoft 365 -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fab fa-microsoft"></i>
+                </div>
+                <div class="ds-skill-name">Microsoft 365</div>
+            </div>
+
+            <!-- Power Automate -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fas fa-cogs"></i> <!-- automation / workflow icon -->
+                </div>
+                <div class="ds-skill-name">Power Automate</div>
+            </div>
+            <!-- FastAPI -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="ds-skill-name">FastAPI</div>
+            </div>
+
+            <!-- PostgreSQL -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="ds-skill-name">PostgreSQL</div>
+            </div>
+
+            <!-- Docker -->
+            <div class="ds-skill-item">
+                <div class="ds-skill-icon">
+                    <i class="fab fa-docker"></i>
+                </div>
+                <div class="ds-skill-name">Docker</div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
     
-    <!-- testimonials -->
-    <section class="ds-testimonials-section">
-      <div class="container">
-          <h2><span>References</span></h2>
-          <div class="ds-testimonials-slider">
-            <div class="ds-testimonials-loop">
-                <article>
-                    Brian's dedication to tutoring and community service is truly inspiring. He has a unique ability to make complex concepts easy to understand. His contributions to our tutoring program have been invaluable.
-                </article>
-                <section>
-                    <span class="ds-name">Christian Kayembe</span>
-                    <span class="ds-post">Director, Classroom Buddies Organization</span>
-                    <span class="ds-contact">Email: <a href="mailto:christian@classroombuddies.org.za">christian@classroombuddies.org.za</a></span>
-                    <span class="ds-contact">Phone: 078 994 1039</span>
-                    <span class="ds-contact">Website: <a href="http://www.classroombuddies.org.za" target="_blank">www.classroombuddies.org.za</a></span>
-                </section>
+    <!-- Projects -->
+    <section class="ds-projects-section">
+        <div class="container">
+            <h2><span>Portfolio</span>Featured Projects</h2>
+            <div class="ds-projects-listing-section">
+                <div class="ds-projects-loop">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <figure>
+                                
+                                <img src="11.png" alt="">
+                                <a href="#" class="ds-link-button"><i class="ri-external-link-line"></i></a>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section>
+                                <h3>Community Engagement Management System</h3>
+                                <span>A comprehensive two-tier Django REST API and frontend system for managing volunteer registration, project tracking, NPO applications, scheduling, and analytics. </span>
+                                <span class="text-muted">Individual Effort</span>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="ds-projects-loop">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <figure>
+                                <img src="22.png" alt="">
+                                <a href="https://cnp-production.up.railway.app/" class="ds-link-button"><i class="ri-external-link-line"></i></a>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section>
+                                <h3>Meal Distribution Web App</h3>
+                                <span>A web application built with Django for managing meal distribution schedules, real-time code verification and inventory adjustments, beneficiaries, inventory, and reporting to ensure efficient food delivery operations. </span>
+                                <span class="text-muted">Individual Effort</span>
+                            </section>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="ds-projects-loop">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <figure>
+                                <img src="33.png" alt="">
+                                <a href="#" class="ds-link-button"><i class="ri-external-link-line"></i></a>
+                            </figure>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section>
+                                <h3>NREP Catering Management System</h3>
+                                <span>An end-to-end catering management platform that handles orders, menus, staff scheduling, and client management, designed for operational efficiency and scalability. </span>
+                                <span class="text-muted">Team Effort</span>
+                            </section>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="ds-testimonials-loop">
-                <article>
-                    Brian's technical skills are impressive, and his ability to lead and mentor others sets him apart. He is a valuable asset to any team and consistently delivers high-quality results.
-                </article>
-                <section>
-                    <span class="ds-name">Tseleng Modjadji</span>
-                    <span class="ds-post">CE Specialist, Community Engagement, University Relations</span>
-                    <span class="ds-contact">Email: <a href="mailto:tselengm@uj.ac.za">tselengm@uj.ac.za</a></span>
-                    <span class="ds-contact">Phone: 011 559 2004</span>
-                </section>
-            </div>
-            
-          </div>
-      </div>
+        </div>
     </section>
-    <section class="ds-email-section">
-       <div class="container">
-          <h2>Available for work</h2>
-          <a href="mailto:briankwazikwenkosi@gmail.com">briankwazikwenkosi@gmail.com</a>
-       </div>
-    </section>
+
+    
     <footer class="ds-footer">
       <div class="container">
-        <span><a href="https://www.instagram.com/brian.sokhela/">Instagram</a></span>
+        <div class="footer-logo"><a href="mailto:briankwazikwenkosi@gmail.com"><span>Brian Sokhela</span></a></div>
+                <p class="footer-text">Software Engineer & Problem Solver passionate about building impactful systems and innovative solutions.</p>
+                <div class="social-links">
+                    <a href="mailto:briankwazikwenkosi@gmail.com"></i></a>
+                </div>
         <span class="ds-copyright">© 2025 All rights reserved. <br><a href="https://www.designstub.com/" target="_blank"></span>
       </div>
     </footer>
